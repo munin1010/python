@@ -76,7 +76,7 @@ if __name__ == "__main__":
     mqtt_controller.setup_wifi_mqtt('SSID+iP14max', 'PSWD+0966331739', 'BROKER+mqttgo.io', 'TOPIC+MQTT/1112', 'TOPIC1+MQTT/2222/2222', 'ready')
     while True:
         a=mqtt_controller.run()
-       if len(a)==4:
+       if len(a)>3:
             b=float(a[2])
             if b==0.7:
                 print('111111111111111')
